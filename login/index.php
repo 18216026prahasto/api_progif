@@ -1,4 +1,5 @@
 <?php
+    require('../vendor/autoload.php');
     include('login.php'); // Includes Login Script
 
     if(isset($_SESSION['login_user'])){
