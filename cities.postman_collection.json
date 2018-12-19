@@ -1,0 +1,416 @@
+{
+	"info": {
+		"_postman_id": "0deaa63b-5289-4acb-aa8d-1dbc152d025b",
+		"name": "cities",
+		"description": "# Introduction\nAPI ini digunakan untuk mengambil data kota berupa nama, negara dan rating kota tersebut yang berada pada NoMadList.com.\n\n# Overview\nAPI ini dijalankan dengan data dummy yang diambil langsung dari NoMadList.com secara 1 per 1 sehingga pada database yang dibuat belum sepenuhnya menggunakan database dari NoMadList.com. API ini juga hanya dapat dijalankan pada localhost menggunakan Apache (PHP) dan database MySQL (PHPmyAdmin).\n\nAPI dapat diakses dengan cara\n/cities untuk mengambil semua data yang ada di database\n/cities?city={name} untuk mengambil data kota secara spesifik\n/cities?country={name} untuk mengambil data kota yang ada pada suatu negara.\n\n# Authentication\nAPI ini menggunakan authentication berupa login biasa yang data usernya disimpan pada MySQL. Sehingga bila dijalankan maka diwajibkan untuk melakukan login terlebih dahulu pada /login.\n\n# Error Codes\nHTTP response yang akan didapatkan pada API ini berupa:\n200 yaitu API berjalan dengan normal.\n401 yaitu pengguna belum melakukan login.\n404 yaitu data yang akan diambil tidak ada.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost/api/cities?city=bangkok",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6acba006-c487-4ef0-a578-7313e9ed51b2",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () { pm.response.to.have.status(401); });",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "tester",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "tester",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/api/cities?city=bangkok",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "bangkok"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/api/cities",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "82f66198-852c-4789-9218-ec96977ebbe7",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "b72b01ef-e340-4b45-b29a-2ba4bf3260dd",
+						"exec": [
+							"pm.test(\"Status code is 401\", function () { pm.response.to.have.status(401); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "tester",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "tester",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/api/cities",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/api/cities?city=buenos aires",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "58dc4477-6330-4373-8076-662b96c7fe5e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "tester",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "tester",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/api/cities?city=buenos aires",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "buenos aires"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/api/cities?country=indonesia",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6e29ae3c-2444-4b4f-9e60-c66f12c949d9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "tester",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "tester",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/api/cities?country=indonesia",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "indonesia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/api/cities?country=hungaria",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8294db4c-cc36-4697-b7ed-eb6eb9d2dafb",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "46e0778f-69b7-47e1-9658-10489cf7183e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "tester",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "tester",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/api/cities?country=hungaria",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "hungaria"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/api/cities?city=hungaria",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3ba30b95-71ee-46c1-8d31-e6cc060e30ec",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () { pm.response.to.have.status(404); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "tester",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "tester",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/api/cities?city=hungaria",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "hungaria"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/api/cities?country=bandung",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0799f0a6-70d8-42d5-a651-11a5e87d072e",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () { pm.response.to.have.status(404); });"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "tester",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "tester",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/api/cities?country=bandung",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "bandung"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

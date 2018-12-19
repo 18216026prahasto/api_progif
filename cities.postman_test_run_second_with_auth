@@ -1,0 +1,476 @@
+{
+	"id": "53e0ec47-f243-4ec1-9f75-9b42874fd070",
+	"name": "cities",
+	"allTests": [],
+	"timestamp": "2018-12-19T15:24:41.103Z",
+	"collection_id": "0deaa63b-5289-4acb-aa8d-1dbc152d025b",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "502e90a1-3adc-4f26-8eac-d8ac6e106a38",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "0deaa63b-5289-4acb-aa8d-1dbc152d025b",
+		"name": "cities",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [
+			"575a97a7-ad92-40bb-9c7a-bb0de5bee195",
+			"b25e779c-5d0e-44d0-b5b9-a49bdbf941f9",
+			"53ed309e-590e-44f1-b2e1-fcf3b91f0d1a",
+			"36080208-03e2-4792-820d-52aeb6b60b52",
+			"5aca4938-95c5-46a3-8394-4f1e273e64c9",
+			"edda8a14-9961-4027-8740-b1b5e30770a1",
+			"ef727eab-b247-4eb0-afdc-ed9d8346954b"
+		],
+		"folders_order": [],
+		"owner": "6165043",
+		"permissions": {},
+		"favorite": true,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "localhost/api/cities?city=bangkok",
+			"id": "575a97a7-ad92-40bb-9c7a-bb0de5bee195",
+			"url": "localhost/api/cities?city=bangkok",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 401",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"55"
+			],
+			"allTests": [
+				{
+					"Status code is 401": true
+				}
+			],
+			"time": "55",
+			"totalRequestTime": "55",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities",
+			"id": "b25e779c-5d0e-44d0-b5b9-a49bdbf941f9",
+			"url": "localhost/api/cities",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 401",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"15"
+			],
+			"allTests": [
+				{
+					"Status code is 401": true
+				}
+			],
+			"time": "15",
+			"totalRequestTime": "15",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities?city=buenos aires",
+			"id": "53ed309e-590e-44f1-b2e1-fcf3b91f0d1a",
+			"url": "localhost/api/cities?city=buenos aires",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 401,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 401",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 401\n    at eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:65)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12074:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"20"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "20",
+			"totalRequestTime": "20",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities?country=indonesia",
+			"id": "36080208-03e2-4792-820d-52aeb6b60b52",
+			"url": "localhost/api/cities?country=indonesia",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 401,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 401",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 401\n    at eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:65)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12074:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"16"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "16",
+			"totalRequestTime": "16",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities?country=hungaria",
+			"id": "5aca4938-95c5-46a3-8394-4f1e273e64c9",
+			"url": "localhost/api/cities?country=hungaria",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 401,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 401",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 401\n    at eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:65)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12074:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"18"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "18",
+			"totalRequestTime": "18",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities?city=hungaria",
+			"id": "edda8a14-9961-4027-8740-b1b5e30770a1",
+			"url": "localhost/api/cities?city=hungaria",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 401,
+					"expected": 404,
+					"message": "expected response to have status code 404 but got 401",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 404 but got 401\n    at eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:65)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12074:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 404",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"22"
+			],
+			"allTests": [
+				{
+					"Status code is 404": false
+				}
+			],
+			"time": "22",
+			"totalRequestTime": "22",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities?country=bandung",
+			"id": "ef727eab-b247-4eb0-afdc-ed9d8346954b",
+			"url": "localhost/api/cities?country=bandung",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 401,
+					"expected": 404,
+					"message": "expected response to have status code 404 but got 401",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 404 but got 401\n    at eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:65)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12074:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12074:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 404",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"13"
+			],
+			"allTests": [
+				{
+					"Status code is 404": false
+				}
+			],
+			"time": "13",
+			"totalRequestTime": "13",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 2,
+	"totalFail": 5,
+	"totalTime": 159,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "localhost/api/cities?city=bangkok",
+			"id": "575a97a7-ad92-40bb-9c7a-bb0de5bee195",
+			"url": "localhost/api/cities?city=bangkok",
+			"time": "2018-12-19T15:24:41.103Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities",
+			"id": "b25e779c-5d0e-44d0-b5b9-a49bdbf941f9",
+			"url": "localhost/api/cities",
+			"time": "2018-12-19T15:24:41.103Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities?city=buenos aires",
+			"id": "53ed309e-590e-44f1-b2e1-fcf3b91f0d1a",
+			"url": "localhost/api/cities?city=buenos aires",
+			"time": "2018-12-19T15:24:41.103Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities?country=indonesia",
+			"id": "36080208-03e2-4792-820d-52aeb6b60b52",
+			"url": "localhost/api/cities?country=indonesia",
+			"time": "2018-12-19T15:24:41.103Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities?country=hungaria",
+			"id": "5aca4938-95c5-46a3-8394-4f1e273e64c9",
+			"url": "localhost/api/cities?country=hungaria",
+			"time": "2018-12-19T15:24:41.103Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities?city=hungaria",
+			"id": "edda8a14-9961-4027-8740-b1b5e30770a1",
+			"url": "localhost/api/cities?city=hungaria",
+			"time": "2018-12-19T15:24:41.103Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities?country=bandung",
+			"id": "ef727eab-b247-4eb0-afdc-ed9d8346954b",
+			"url": "localhost/api/cities?country=bandung",
+			"time": "2018-12-19T15:24:41.103Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		}
+	],
+	"synced": false
+}

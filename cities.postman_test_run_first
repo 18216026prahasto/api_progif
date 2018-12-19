@@ -1,0 +1,441 @@
+{
+	"id": "711df226-a683-4f1f-834b-dc717a8815fc",
+	"name": "cities",
+	"allTests": [],
+	"timestamp": "2018-12-19T15:17:25.771Z",
+	"collection_id": "0deaa63b-5289-4acb-aa8d-1dbc152d025b",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "502e90a1-3adc-4f26-8eac-d8ac6e106a38",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "0deaa63b-5289-4acb-aa8d-1dbc152d025b",
+		"name": "cities",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [
+			"575a97a7-ad92-40bb-9c7a-bb0de5bee195",
+			"b25e779c-5d0e-44d0-b5b9-a49bdbf941f9",
+			"53ed309e-590e-44f1-b2e1-fcf3b91f0d1a",
+			"36080208-03e2-4792-820d-52aeb6b60b52",
+			"5aca4938-95c5-46a3-8394-4f1e273e64c9",
+			"edda8a14-9961-4027-8740-b1b5e30770a1",
+			"ef727eab-b247-4eb0-afdc-ed9d8346954b"
+		],
+		"folders_order": [],
+		"owner": "6165043",
+		"permissions": {},
+		"favorite": true,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "localhost/api/cities?city=bangkok",
+			"id": "575a97a7-ad92-40bb-9c7a-bb0de5bee195",
+			"url": "localhost/api/cities?city=bangkok",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"36"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "36",
+			"totalRequestTime": "36",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities",
+			"id": "b25e779c-5d0e-44d0-b5b9-a49bdbf941f9",
+			"url": "localhost/api/cities",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"23"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "23",
+			"totalRequestTime": "23",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities?city=buenos aires",
+			"id": "53ed309e-590e-44f1-b2e1-fcf3b91f0d1a",
+			"url": "localhost/api/cities?city=buenos aires",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"14"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "14",
+			"totalRequestTime": "14",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities?country=indonesia",
+			"id": "36080208-03e2-4792-820d-52aeb6b60b52",
+			"url": "localhost/api/cities?country=indonesia",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"16"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "16",
+			"totalRequestTime": "16",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities?country=hungaria",
+			"id": "5aca4938-95c5-46a3-8394-4f1e273e64c9",
+			"url": "localhost/api/cities?country=hungaria",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"12"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "12",
+			"totalRequestTime": "12",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities?city=hungaria",
+			"id": "edda8a14-9961-4027-8740-b1b5e30770a1",
+			"url": "localhost/api/cities?city=hungaria",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 404",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"29"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "29",
+			"totalRequestTime": "29",
+			"iterationResults": {}
+		},
+		{
+			"name": "localhost/api/cities?country=bandung",
+			"id": "ef727eab-b247-4eb0-afdc-ed9d8346954b",
+			"url": "localhost/api/cities?country=bandung",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 404",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"12"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "12",
+			"totalRequestTime": "12",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 7,
+	"totalFail": 0,
+	"totalTime": 142,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "localhost/api/cities?city=bangkok",
+			"id": "575a97a7-ad92-40bb-9c7a-bb0de5bee195",
+			"url": "localhost/api/cities?city=bangkok",
+			"time": "2018-12-19T15:17:25.771Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities",
+			"id": "b25e779c-5d0e-44d0-b5b9-a49bdbf941f9",
+			"url": "localhost/api/cities",
+			"time": "2018-12-19T15:17:25.771Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities?city=buenos aires",
+			"id": "53ed309e-590e-44f1-b2e1-fcf3b91f0d1a",
+			"url": "localhost/api/cities?city=buenos aires",
+			"time": "2018-12-19T15:17:25.771Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities?country=indonesia",
+			"id": "36080208-03e2-4792-820d-52aeb6b60b52",
+			"url": "localhost/api/cities?country=indonesia",
+			"time": "2018-12-19T15:17:25.771Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities?country=hungaria",
+			"id": "5aca4938-95c5-46a3-8394-4f1e273e64c9",
+			"url": "localhost/api/cities?country=hungaria",
+			"time": "2018-12-19T15:17:25.771Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities?city=hungaria",
+			"id": "edda8a14-9961-4027-8740-b1b5e30770a1",
+			"url": "localhost/api/cities?city=hungaria",
+			"time": "2018-12-19T15:17:25.771Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "localhost/api/cities?country=bandung",
+			"id": "ef727eab-b247-4eb0-afdc-ed9d8346954b",
+			"url": "localhost/api/cities?country=bandung",
+			"time": "2018-12-19T15:17:25.771Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
